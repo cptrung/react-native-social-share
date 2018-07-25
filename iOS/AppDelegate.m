@@ -8,8 +8,7 @@
  */
 
 #import "AppDelegate.h"
-
-#import "RCTRootView.h"
+#import <React/RCTRootView.h>
 
 @implementation AppDelegate
 
@@ -38,6 +37,7 @@
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"ReactNativeSocialShare"
+                                                      initialProperties:nil
                                                    launchOptions:launchOptions];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
